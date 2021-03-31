@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2025E7A8C6D37360349667C3 /* Pods_evenements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97968678BE03A86C5E61FD6E /* Pods_evenements.framework */; };
+		6DE0CCF72614BBBA004EE8A3 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */; };
 		BD4BB897260A089A00B6E9B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB896260A089A00B6E9B2 /* AppDelegate.swift */; };
 		BD4BB899260A089A00B6E9B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB898260A089A00B6E9B2 /* SceneDelegate.swift */; };
 		BD4BB89B260A089A00B6E9B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB89A260A089A00B6E9B2 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		97968678BE03A86C5E61FD6E /* Pods_evenements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evenements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4BB893260A089A00B6E9B2 /* evenements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evenements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4BB896260A089A00B6E9B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				BD4BB89F260A089C00B6E9B2 /* Assets.xcassets */,
 				BD4BB8A1260A089C00B6E9B2 /* LaunchScreen.storyboard */,
 				BD4BB8A4260A089C00B6E9B2 /* Info.plist */,
+				6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */,
 			);
 			path = evenements;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				BD4FD6E9260B2F34000FC944 /* AboutViewController.swift in Sources */,
 				BDAB491A26145F5800CF8369 /* DescriptionViewController.swift in Sources */,
 				BD4FD6EE260B53C6000FC944 /* EventsCollectionViewCell.swift in Sources */,
+				6DE0CCF72614BBBA004EE8A3 /* SpeakerViewController.swift in Sources */,
 				BD4BB899260A089A00B6E9B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

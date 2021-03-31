@@ -52,16 +52,16 @@
 		2A9590666D220AE8BF48D628C8A1EEC9 /* Pods-evenements-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-evenements-acknowledgements.plist"; sourceTree = "<group>"; };
 		2E7F831F3CF5E84362C681F1686743A3 /* DateScrollItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateScrollItem.swift; path = DateScrollPicker/Classes/DateScrollItem.swift; sourceTree = "<group>"; };
 		361C28DD0C7AB7860CD793134C4A49C4 /* DateViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateViewCell.swift; path = DateScrollPicker/Classes/Cells/DateViewCell.swift; sourceTree = "<group>"; };
-		3B81C4D1DE2D670414047458E9480F23 /* DateScrollPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateScrollPicker.framework; path = DateScrollPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B81C4D1DE2D670414047458E9480F23 /* DateScrollPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateScrollPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8CD664DDBF52D18A316DEED93C6825 /* DateScrollPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateScrollPicker.xib; path = DateScrollPicker/Classes/DateScrollPicker.xib; sourceTree = "<group>"; };
 		4DABB4CF5A8445471F98EBEFF9196F0E /* DateScrollPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateScrollPicker.swift; path = DateScrollPicker/Classes/DateScrollPicker.swift; sourceTree = "<group>"; };
 		4F35CBE2A85D6DAB870D3007B347E264 /* SeparatorViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SeparatorViewCell.xib; path = DateScrollPicker/Classes/Cells/SeparatorViewCell.xib; sourceTree = "<group>"; };
 		65DEB81F1FB4934A0BA54BD2EBDD529F /* DateScrollPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateScrollPicker-prefix.pch"; sourceTree = "<group>"; };
 		6C3F4BA934E3904626A62BCF0229E783 /* DateScrollPicker+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateScrollPicker+Protocols.swift"; path = "DateScrollPicker/Classes/DateScrollPicker+Protocols.swift"; sourceTree = "<group>"; };
-		76E25E6D1FF2AED6AB401B7D3712447A /* Pods_evenements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_evenements.framework; path = "Pods-evenements.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E25E6D1FF2AED6AB401B7D3712447A /* Pods_evenements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evenements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		887308D2BF3CAD12517BC37081C55E29 /* Pods-evenements.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-evenements.debug.xcconfig"; sourceTree = "<group>"; };
 		894E4F659A9216574B344B25B6D72537 /* DateScrollPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateScrollPicker-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF1E158FA65A5C2EDA000D51C3302B9 /* Pods-evenements-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-evenements-Info.plist"; sourceTree = "<group>"; };
 		A2D7C6621E3ECF77662D3E47BAC07784 /* DateScrollPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateScrollPicker-umbrella.h"; sourceTree = "<group>"; };
 		A810F4336050F3F81E45BB4FD32F769F /* DateViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateViewCell.xib; path = DateScrollPicker/Classes/Cells/DateViewCell.xib; sourceTree = "<group>"; };
@@ -209,7 +209,6 @@
 				1265C6219A96023E682DF9BFEE26DFA7 /* UIView+Nib.swift */,
 				A726A978107273923856F428F271A73D /* Support Files */,
 			);
-			name = DateScrollPicker;
 			path = DateScrollPicker;
 			sourceTree = "<group>";
 		};
@@ -279,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -506,7 +505,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-evenements/Pods-evenements-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,7 +542,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DateScrollPicker/DateScrollPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DateScrollPicker/DateScrollPicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +578,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-evenements/Pods-evenements-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,7 +616,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DateScrollPicker/DateScrollPicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DateScrollPicker/DateScrollPicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
