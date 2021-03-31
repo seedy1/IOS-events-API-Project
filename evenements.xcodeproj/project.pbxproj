@@ -18,6 +18,7 @@
 		BD4BB8B9260A089C00B6E9B2 /* evenementsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB8B8260A089C00B6E9B2 /* evenementsUITests.swift */; };
 		BD4FD6E9260B2F34000FC944 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FD6E8260B2F34000FC944 /* AboutViewController.swift */; };
 		BD4FD6EE260B53C6000FC944 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FD6ED260B53C6000FC944 /* EventsCollectionViewCell.swift */; };
+		BDAB491A26145F5800CF8369 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB491926145F5800CF8369 /* DescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BD4BB8BA260A089C00B6E9B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD4FD6E8260B2F34000FC944 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		BD4FD6ED260B53C6000FC944 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDAB491926145F5800CF8369 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		CDCE45C58A847E03CDA269B6 /* Pods-evenements.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evenements.release.xcconfig"; path = "Target Support Files/Pods-evenements/Pods-evenements.release.xcconfig"; sourceTree = "<group>"; };
 		DAEBC08CF4B400FDEB169151 /* Pods-evenements.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evenements.debug.xcconfig"; path = "Target Support Files/Pods-evenements/Pods-evenements.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				BD4BB898260A089A00B6E9B2 /* SceneDelegate.swift */,
 				BD4BB89A260A089A00B6E9B2 /* ViewController.swift */,
 				BD4BB89C260A089A00B6E9B2 /* Main.storyboard */,
+				BDAB491926145F5800CF8369 /* DescriptionViewController.swift */,
 				BD4FD6ED260B53C6000FC944 /* EventsCollectionViewCell.swift */,
 				BD4FD6E8260B2F34000FC944 /* AboutViewController.swift */,
 				BD4BB89F260A089C00B6E9B2 /* Assets.xcassets */,
@@ -335,6 +338,7 @@
 				BD4BB89B260A089A00B6E9B2 /* ViewController.swift in Sources */,
 				BD4BB897260A089A00B6E9B2 /* AppDelegate.swift in Sources */,
 				BD4FD6E9260B2F34000FC944 /* AboutViewController.swift in Sources */,
+				BDAB491A26145F5800CF8369 /* DescriptionViewController.swift in Sources */,
 				BD4FD6EE260B53C6000FC944 /* EventsCollectionViewCell.swift in Sources */,
 				BD4BB899260A089A00B6E9B2 /* SceneDelegate.swift in Sources */,
 			);
