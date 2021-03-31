@@ -1,0 +1,16 @@
+PODS:
+  - DateScrollPicker (1.1.0)
+
+DEPENDENCIES:
+  - DateScrollPicker
+
+SPEC REPOS:
+  trunk:
+    - DateScrollPicker
+
+SPEC CHECKSUMS:
+  DateScrollPicker: 95cbb220b28a5dd95c97018dd278c074842c7e21
+
+PODFILE CHECKSUM: df4593b2d9e3ec3adab9de11e3b5796315eef87b
+
+COCOAPODS: 1.10.1

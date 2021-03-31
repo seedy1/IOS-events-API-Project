@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import DateScrollPicker
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    @IBOutlet weak var DateScrollPicker: DateScrollPicker!
     
     var imageArray = [UIImage(named: "apple-512"), UIImage(named: "apple-512"), UIImage(named: "apple-512"), UIImage(named: "apple-512")]
     var titleArray = ["KOD Tour", "4YEO", "Sideline", "2014 FHD"]
@@ -35,6 +39,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         title = "home"
+        
+        var format = DateScrollPickerFormat()
+        format.days = 6
+        format.topDateFormat = "EEE"
+        format.topFont = UIFont.systemFont(ofSize: 10, weight: .regular)
+
         
         
     }
