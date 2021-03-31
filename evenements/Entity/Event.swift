@@ -15,4 +15,4 @@ struct Event {
     var photos: [Photo]; //Photos
     var maxCapacity: [Int]; //Max capacity
 }
-"https://api.airtable.com/v0/appXKn0DvuHuLw4DV/Speakers%20%26%20attendees?api_key=keyiDVu8jQuB64NkQ"
+
