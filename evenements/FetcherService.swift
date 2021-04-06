@@ -7,10 +7,11 @@
 
 import Foundation
 
-class Fetcher {
+class FetcherService {
     
     // A generic fetching function that fetches and parses a JSON downloaded
     // from a given Url
+    // (Example of how to use below)
     func fetchJSON <T>(fetchUrlString:String, completionHandler: @escaping (T) -> Void) where T : Decodable {
         
         // Transform input string url into an URL object
@@ -29,6 +30,7 @@ class Fetcher {
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode) else {
                 // Todo : link to the screen instead of print
+                // view.reloadData() for example in viewDidAppear
                 print("Error with the response, unexpected status code: \(String(describing: response))")
             return
             }
@@ -42,35 +44,36 @@ class Fetcher {
         // Launch task
         task.resume()
     }
-    
-    // EXAMPLE of how to use the function:
-    //
-    //
-    // Note: RootLocation class is just an example class.
-    // Replace it with your own!
-    //
-    // You need to have a class that implements Decodable and
-    // maps the JSON you are trying to decode.
-    
-    /*
-     class Main{
-         private var locations: RootLocationClass?
-         
-         func run(){
-             Fetcher().fetchAPI(fetchUrlString: testUrlString){ [weak self] (locations:RootLocationClass) in
+}
+
+
+// EXAMPLE of how to use the function:
+//
+//
+// Note: RootLocation class is just an example class.
+// Replace it with your own!
+//
+// You need to have a class that implements Decodable and
+// maps the JSON you are trying to decode.
+
+/*
+ class Foo{
+     private var locations: RootLocationClass?
      
-                 self?.locations = locations
-                 DispatchQueue.main.async {
-                     /* Do async work here */
-                   //self?.tableView.reloadData()
-                     //print (locations)
-                     print ("1st location name: ",locations.records[0].fields.locationName) // Saphire room
-                     print ("2nd location name: ",locations.records[1].fields.locationName) // Garnet room
-                 }
+     func run(){
+         Fetcher().fetchAPI(fetchUrlString: testUrlString){ [weak self] (locations:RootLocationClass) in
+ 
+             self?.locations = locations
+             DispatchQueue.main.async {
+                 /* Do async work here */
+               //self?.tableView.reloadData()
+                 //print (locations)
+                 print ("1st location name: ",locations.records[0].fields.locationName) // Saphire room
+                 print ("2nd location name: ",locations.records[1].fields.locationName) // Garnet room
              }
          }
      }
-     */
-    
-    // END OF EXAMPLE
-}
+ }
+ */
+
+// END OF EXAMPLE
