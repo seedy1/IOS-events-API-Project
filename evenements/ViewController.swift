@@ -44,9 +44,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         format.days = 6
         format.topDateFormat = "EEE"
         format.topFont = UIFont.systemFont(ofSize: 10, weight: .regular)
-
-        
-        
     }
 
 

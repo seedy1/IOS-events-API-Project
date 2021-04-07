@@ -62,7 +62,16 @@ struct Photo : Decodable {
 }
 
 // EventLocation service
-class EventLocationService {
+class EventLocationService: Service {
+    
+    override init(pathParam:String) {
+        super.init(pathParam:Constants.EventLocationURL)
+    }
+    
+    // Fetch all
+    func fetchAll(onNewEventHandler: @escaping ([EventLocation]) -> Void){
+        fetchURL(urlString: getPath(), onNewEventHandler: onNewEventHandler)
+    }
     
     // Fetch all
     func fetchURL(urlString: String,

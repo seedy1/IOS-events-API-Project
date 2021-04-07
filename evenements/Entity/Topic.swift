@@ -27,9 +27,18 @@ extension Topic {
 }
 
 // Topic service
-class TopicService {
+class TopicService : Service {
+    
+    override init(pathParam:String) {
+        super.init(pathParam:Constants.TopicURL)
+    }
     
     // Fetch all
+    func fetchAll(onNewTopicHandler: @escaping ([Topic]) -> Void){
+        fetchURL(urlString: getPath(), onNewTopicHandler: onNewTopicHandler)
+    }
+    
+    // Fetch all from URL
     func fetchURL(urlString: String,
                   onNewTopicHandler: @escaping ([Topic]) -> Void){
         //call fetcher service
