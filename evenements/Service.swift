@@ -14,13 +14,13 @@ class Service {
     //let urlBuilder: URLBuilder
     var url:String
     
-    /*init(){
+    init(){
         baseUrl = Constants.BaseURL
         path = ""
         auth = Constants.AuthHeader + Constants.AuthKey
         url = ""
         buildPath()
-    }*/
+    }
     
     init(pathParam:String){
         baseUrl = Constants.BaseURL

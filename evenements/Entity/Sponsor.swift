@@ -36,7 +36,7 @@ extension Sponsor {
 // EventLocation service
 class SponsorService : Service{
     
-    override init(pathParam:String) {
+    override init() {
         super.init(pathParam:Constants.SponsorURL)
     }
     

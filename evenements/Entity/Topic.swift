@@ -29,7 +29,7 @@ extension Topic {
 // Topic service
 class TopicService : Service {
     
-    override init(pathParam:String) {
+    override init() {
         super.init(pathParam:Constants.TopicURL)
     }
     

@@ -40,7 +40,7 @@ extension Schedule {
 // EventLocation service
 class ScheduleService : Service {
     
-    override init(pathParam:String) {
+    override init() {
         super.init(pathParam:Constants.ScheduleURL)
     }
     

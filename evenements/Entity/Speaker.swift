@@ -40,7 +40,7 @@ extension Speaker {
 // EventLocation service
 class SpeakerService : Service{
     
-    override init(pathParam:String) {
+    override init() {
         super.init(pathParam:Constants.SpeakerURL)
     }
     

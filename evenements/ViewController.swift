@@ -45,6 +45,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         format.topDateFormat = "EEE"
         format.topFont = UIFont.systemFont(ofSize: 10, weight: .regular)
     }
+    
+    
+    // Example data structure
+    var scheduleList:[Schedule]!
+    
+    func viewDidAppear() {
+        ScheduleService().fetchAll(){ [weak self](schedules:[Schedule]) in
+           // return to main thread
+           DispatchQueue.main.async {
+            /* Do async work here */
+            self?.scheduleList = schedules
+            //self?.DateScrollPicker.updateSomething()
+           }
+        }
+    }
 
 
 }

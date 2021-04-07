@@ -64,7 +64,7 @@ struct Photo : Decodable {
 // EventLocation service
 class EventLocationService: Service {
     
-    override init(pathParam:String) {
+    override init() {
         super.init(pathParam:Constants.EventLocationURL)
     }
     
