@@ -15,6 +15,7 @@ struct EventLocation {
     var scheduledEvents: [String]
     var description: String
     var photos: [Photo]
+    var createdTime: String
 }
 
 // EventLocation mapping to service
@@ -26,10 +27,10 @@ extension EventLocation {
         scheduledEvents = raw.fields.scheduledEvents;
         description = raw.fields.description;
         photos = []
-        
         for rawphoto in raw.fields.photos{
             photos.append(rawphoto)
         }
+        createdTime = raw.createdTime;
     }
 }
 
@@ -63,16 +64,16 @@ struct Photo : Decodable {
 // EventLocation service
 class EventLocationService {
     
-    var tempEventLocation: RawEventLocation?
-    
-    func fetchAll(urlString: String){
-        FetcherService().fetchJSON(fetchUrlString: urlString){ [weak self] (locations:RawEventLocation) in
-            self?.tempEventLocation = locations
-            
+    // Fetch all
+    func fetchURL(urlString: String,
+                  onNewEventHandler: @escaping ([EventLocation]) -> Void){
+        //call fetcher service
+        FetcherService().fetchJSON(fetchUrlString: urlString){ (locations:RawEventLocation) in
+            let locationList = locations.records.map { EventLocation(from: $0) }
             // return to main thread
             DispatchQueue.main.async {
                 /* Do async work here */
-                //self?.tableView.reloadData()
+                onNewEventHandler(locationList)
             }
         }
     }
@@ -92,9 +93,10 @@ class EventLocationService {
         struct Location : Decodable{
             var id: String;
             var fields:Fields;
+            var createdTime: String;
             
             enum CodingKeys: String, CodingKey{
-                case id = "id", fields
+                case id = "id", fields, createdTime
             }
             
             // Fields

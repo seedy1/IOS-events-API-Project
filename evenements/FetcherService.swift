@@ -47,7 +47,7 @@ class FetcherService {
 }
 
 
-// EXAMPLE of how to use the function:
+// EXAMPLE of how to use fetchJSON function:
 //
 //
 // Note: RootLocation class is just an example class.
