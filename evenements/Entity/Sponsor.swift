@@ -34,9 +34,18 @@ extension Sponsor {
 }
 
 // EventLocation service
-class SponsorService {
+class SponsorService : Service{
+    
+    override init() {
+        super.init(pathParam:Constants.SponsorURL)
+    }
     
     // Fetch all
+    func fetchAll(onNewSponsorHandler: @escaping ([Sponsor]) -> Void){
+        fetchURL(urlString: getPath(), onNewSponsorHandler: onNewSponsorHandler)
+    }
+    
+    // Fetch all from URL
     func fetchURL(urlString: String,
                   onNewSponsorHandler: @escaping ([Sponsor]) -> Void){
         //call fetcher service

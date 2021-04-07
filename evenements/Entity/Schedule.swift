@@ -38,9 +38,18 @@ extension Schedule {
 }
 
 // EventLocation service
-class ScheduleService {
+class ScheduleService : Service {
+    
+    override init() {
+        super.init(pathParam:Constants.ScheduleURL)
+    }
     
     // Fetch all
+    func fetchAll(onNewscheduleHandler: @escaping ([Schedule]) -> Void){
+        fetchURL(urlString: getPath(), onNewscheduleHandler: onNewscheduleHandler)
+    }
+    
+    // Fetch all from URL
     func fetchURL(urlString: String,
                   onNewscheduleHandler: @escaping ([Schedule]) -> Void){
         //call fetcher service

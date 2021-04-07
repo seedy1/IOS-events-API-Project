@@ -38,7 +38,11 @@ extension Speaker {
 }
 
 // EventLocation service
-class SpeakerService {
+class SpeakerService : Service{
+    
+    override init() {
+        super.init(pathParam:Constants.SpeakerURL)
+    }
     
     // Fetch all
     func fetchURL(urlString: String,
