@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2025E7A8C6D37360349667C3 /* Pods_evenements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97968678BE03A86C5E61FD6E /* Pods_evenements.framework */; };
 		6DE0CCF72614BBBA004EE8A3 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */; };
+		2B02DFEA261D4F2B00E678F8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B02DFE9261D4F2B00E678F8 /* Schedule.swift */; };
+		2B0D40A4260B325C008ED062 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D40A3260B325C008ED062 /* Event.swift */; };
+		2B0D40B1260B3664008ED062 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D40B0260B3664008ED062 /* Topic.swift */; };
+		2B0D40B6260B379B008ED062 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D40B5260B379B008ED062 /* Speaker.swift */; };
+		2B5A3EDD261474B1006007BC /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A3EDC261474B1006007BC /* FetcherService.swift */; };
 		BD4BB897260A089A00B6E9B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB896260A089A00B6E9B2 /* AppDelegate.swift */; };
 		BD4BB899260A089A00B6E9B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB898260A089A00B6E9B2 /* SceneDelegate.swift */; };
 		BD4BB89B260A089A00B6E9B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB89A260A089A00B6E9B2 /* ViewController.swift */; };
@@ -42,6 +47,11 @@
 /* Begin PBXFileReference section */
 		6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		97968678BE03A86C5E61FD6E /* Pods_evenements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evenements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B02DFE9261D4F2B00E678F8 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Entity/Schedule.swift; sourceTree = "<group>"; };
+		2B0D40A3260B325C008ED062 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Entity/Event.swift; sourceTree = "<group>"; };
+		2B0D40B0260B3664008ED062 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Topic.swift; path = Entity/Topic.swift; sourceTree = "<group>"; };
+		2B0D40B5260B379B008ED062 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = Entity/Speaker.swift; sourceTree = "<group>"; };
+		2B5A3EDC261474B1006007BC /* FetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherService.swift; sourceTree = "<group>"; };
 		BD4BB893260A089A00B6E9B2 /* evenements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evenements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4BB896260A089A00B6E9B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD4BB898260A089A00B6E9B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +152,11 @@
 				BD4BB8A1260A089C00B6E9B2 /* LaunchScreen.storyboard */,
 				BD4BB8A4260A089C00B6E9B2 /* Info.plist */,
 				6DE0CCF62614BBBA004EE8A3 /* SpeakerViewController.swift */,
+				2B0D40A3260B325C008ED062 /* Event.swift */,
+				2B0D40B0260B3664008ED062 /* Topic.swift */,
+				2B0D40B5260B379B008ED062 /* Speaker.swift */,
+				2B5A3EDC261474B1006007BC /* FetcherService.swift */,
+				2B02DFE9261D4F2B00E678F8 /* Schedule.swift */,
 			);
 			path = evenements;
 			sourceTree = "<group>";
@@ -339,11 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4BB89B260A089A00B6E9B2 /* ViewController.swift in Sources */,
+				2B0D40B1260B3664008ED062 /* Topic.swift in Sources */,
+				2B0D40A4260B325C008ED062 /* Event.swift in Sources */,
+				2B5A3EDD261474B1006007BC /* FetcherService.swift in Sources */,
 				BD4BB897260A089A00B6E9B2 /* AppDelegate.swift in Sources */,
 				BD4FD6E9260B2F34000FC944 /* AboutViewController.swift in Sources */,
 				BDAB491A26145F5800CF8369 /* DescriptionViewController.swift in Sources */,
 				BD4FD6EE260B53C6000FC944 /* EventsCollectionViewCell.swift in Sources */,
 				6DE0CCF72614BBBA004EE8A3 /* SpeakerViewController.swift in Sources */,
+				2B0D40B6260B379B008ED062 /* Speaker.swift in Sources */,
+				2B02DFEA261D4F2B00E678F8 /* Schedule.swift in Sources */,
 				BD4BB899260A089A00B6E9B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
